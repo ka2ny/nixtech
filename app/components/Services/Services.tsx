@@ -12,7 +12,7 @@ import {
 } from "@mantine/core";
 import classes from "./Services.module.css";
 import { useRef } from "react";
-import Autoplay from "embla-carousel-autoplay";
+
 
 interface CardProps {
   title: string;
@@ -103,7 +103,7 @@ export function CardsCarousel({ opened }: { opened: boolean }) {
       <Card {...item} />
     </Carousel.Slide>
   ));
-  const autoplay = useRef(Autoplay({ delay: 200 }));
+  
   return (
     <>
       <Title order={1} p={20}>
