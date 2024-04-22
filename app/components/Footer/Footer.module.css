@@ -1,0 +1,98 @@
+.companyName {
+  align-self: flex-start;
+  font-size: 3.5em;
+  font-weight: bold;
+  text-decoration: none;
+}
+.btnShine {
+  color: #fff;
+  background: linear-gradient(to right, #fff 0, #828282 10%, #fff 20%);
+  background-position: 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 10s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  white-space: nowrap;
+}
+@-moz-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 175px;
+  }
+  100% {
+    background-position: 310px;
+  }
+}
+@-webkit-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 175px;
+  }
+  100% {
+    background-position: 310px;
+  }
+}
+@-o-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 175px;
+  }
+  100% {
+    background-position: 310px;
+  }
+}
+@keyframes shine {
+  0% {
+    background-position: 10px;
+  }
+  60% {
+    background-position: 175px;
+  }
+  100% {
+    background-position: 310px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .companyName {
+    text-align: center;
+    align-self: center;
+  }
+}
+.footer {
+  margin-top: rem(120px);
+  border-top: rem(1px) solid
+    light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-5));
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--mantine-spacing-md) var(--mantine-spacing-md);
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    flex-direction: column;
+  }
+}
+
+.links {
+  @media (max-width: $mantine-breakpoint-sm) {
+    margin-top: var(--mantine-spacing-lg);
+    margin-bottom: var(--mantine-spacing-sm);
+  }
+}
+.oswaldFt {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
